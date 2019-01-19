@@ -43,3 +43,6 @@ Temporary Items
 Session.vim
 .netrwhist
 *~
+
+
+.elixir_ls

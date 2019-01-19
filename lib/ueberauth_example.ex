@@ -10,9 +10,9 @@ defmodule UeberauthExample do
 
     children = [
       # Start the Ecto repository
-      supervisor(UeberauthExample.Repo, []),
+      # supervisor(UeberauthExample.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(UeberauthExampleWeb.Endpoint, []),
+      supervisor(UeberauthExampleWeb.Endpoint, [])
       # Here you could define other workers and supervisors as children
       # worker(UeberauthExample.Worker, [arg1, arg2, arg3]),
     ]

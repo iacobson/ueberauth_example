@@ -12,11 +12,18 @@ config :ueberauth_example, UeberauthExampleWeb.Endpoint,
   code_reloader: true,
   cache_static_lookup: false,
   check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-                    cd: Path.expand("../assets", __DIR__)]]
+  watchers: [
+    node: [
+      "node_modules/brunch/bin/brunch",
+      "watch",
+      "--stdin",
+      cd: Path.expand("../assets", __DIR__)
+    ]
+  ]
 
 # Watch static and templates for browser reloading.
 config :ueberauth_example, UeberauthExampleWeb.Endpoint,
+  secret_key_base: "Lt6ZcVZrMQb/Ibw38XF3SDSbUZK6EC3+KYrDCPJ+9CysGIWPpUA0rZZ3eon8Wipy",
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
